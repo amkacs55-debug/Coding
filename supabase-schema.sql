@@ -82,7 +82,7 @@ create policy "Messages are viewable by everyone" on public.chat_messages for se
 create policy "Users can insert messages" on public.chat_messages for insert with check (auth.uid() = user_id);
 
 -- Triggers to auto-create profile and handle updated_at
-create or function public.handle_new_user()
+create or replace function public.handle_new_user()
 returns trigger as $$
 begin
   insert into public.profiles (id, email, full_name, avatar_url)
