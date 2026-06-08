@@ -1,0 +1,8 @@
+{
+  "name": "Remix: CodeHub",
+  "description": "Монгол хэл дээрх кодинг сургалтын платформ. Код сурах, хөгжих, бусадтай харилцах цогц талбар.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
